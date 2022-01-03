@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///Users/thirukumaran/Documents/Hp.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            box-sizing: border-box;
+        }
+        body{
+            width: 98%;
+            margin:0 auto;
+            background-color: blanchedalmond;
+        }
+        input[type=text]{
+
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color:white;
+            background-image: url(./search.png);
+            background-position: 8px 8px;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 10px 40px;
+            transition: width 0.2s ease-in-out;
+            float: left;
+        }
+        #Input{
+            display: inline;
+        }
+        input[type=text]:focus{
+            
+            width: 95%;
+
+        }
+        .header{
+            margin-top: 10px;
+            background-color: gray;
+            text-align: center;
+            color: white;
+            font-style: italic;
+            padding: 30px;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+        h5{
+            margin-top: 15px;
+        }
+        /* top nav*/
+        .link{
+            overflow: hidden;
+            background-color: black;
+        }
+        .link a{
+            text-align: center;
+            background-color: black;
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 14px 16px;
+            float: left;
+            text-decoration: none;
+        }
+        .link a:hover{
+            background-color: white;
+            color:black
+        }
+        /*End link*/
+        /* Left column start*/
+        .Left{
+            float:left;
+            width:75%;
+        }
+        .content{
+            background-color: white;
+            font-family: sans-serif;
+            margin-top: 10px;
+            padding: 30px;
+        }
+        .img{
+            width:100%;
+            overflow: hidden;
+            height: 200px;
+        }
+        
+        /* Left column end*/
+        /*Right column*/
+        .Right{
+            float: right;
+            width:24%
+        }
+        .contentR{
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+            
+        }
+        .imgR{
+            width:100%;
+            overflow: hidden;
+            height: 100px;
+        }
+        /*Clear the remaining block*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+        /*Footer*/
+        .Footer{
+            background-color: gray;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 800px) {
+            .Left, .Right {   
+             width: 100%;
+             padding: 0;
+         }
+        }
+        @media screen and (max-width: 400px) {
+            h1{
+                margin-top: 40px;
+            font-size: 40px;
+        }
+            .link a {
+            float: none;
+            width: 100%;
+        }
+        input[type=text]{
+            width: 100%;
+        }
+        }     
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="Input">
+    <form>
+        <input type="text"name="search" placeholder="Search..">
+    </form>
+        </div>
+        <br>
+        <h1>Demo Website</h1>
+        <h5>Resize the browser window to see the effect</h5>
+    </div>
+    <div class="link">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" style="float:right">Tell us</a>
+    </div>
+<div class="row">
+    <div class="Left">
+        <div class="content">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description,Dec 18,2022</h5>
+            <div class="img"><img src="./Card2.png"></div>
+            <p>Some text...</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio beatae suscipit quibusdam. Distinctio rerum ab non tempora tenetur saepe doloribus deleniti quod laboriosam nulla magnam ipsam molestias sit veritatis repellat omnis aliquam, quisquam ut velit! Quis esse soluta magni porro sunt quisquam, repellat praesentium nobis, cupiditate libero voluptas fugit?</p>
+        </div>
+        <div class="content">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description,Dec 18,2022</h5>
+                <div class="img"><img src="./card3.png"></div>
+                <p>Some text...</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio beatae suscipit quibusdam. Distinctio rerum ab non tempora tenetur saepe doloribus deleniti quod laboriosam nulla magnam ipsam molestias sit veritatis repellat omnis aliquam, quisquam ut velit! Quis esse soluta magni porro sunt quisquam, repellat praesentium nobis, cupiditate libero voluptas fugit?</p>
+            
+        </div>
+    </div>
+
+     <div class="Right">
+         <div class="contentR">
+             <h2>About Me</h2>
+             <div class="imgR"><img src="./right1.png"></div>
+             <br>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci recusandae architecto nesciunt eum! Optio suscipit officiis in minus consectetur quisquam.</p>
+
+         </div>
+         <div class="contentR">
+             <h2>Popular Post</h2>
+             <br>
+             <div class="imgR"><img src="./right2.jpeg"> </div>
+             <div class="imgR"><img src="./right3.png"></div>
+             <div class="imgR"><img src="./right4.png"></div>
+         </div>
+         <div class="contentR">
+             <h2>Follow Me</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum aperiam ab exercitationem provident vel et maxime quae. Eos, ullam.</p>
+         </div>
+     </div>
+</div>     
+     <div class="Footer">
+         <h1>Footer</h1>
+     </div>
+
+</body></html>
